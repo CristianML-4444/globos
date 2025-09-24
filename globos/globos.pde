@@ -17,23 +17,28 @@ class Globo
 
   void dibujate()
   {
+    fill(0);
       ellipse(x,y,100,150);
+      image(cara,x-25,y-25,50,50);
   }
   
 }
 
 ArrayList<Globo> globos;
+PImage cara;
 
 
 void setup()
 {
   size(640,480);
   globos = new ArrayList<Globo>();  
+  cara = loadImage("5D9.jpg");
+  
 }
 
 void draw()
 {
-  background(0);
+  background(640, 480);
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
