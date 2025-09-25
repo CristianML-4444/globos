@@ -5,8 +5,8 @@ class Globo
   {
    x=_x;
    y=_y; 
-   vx=random(-0.455,0.355);
-   vy=random(-2,-0.5);
+   vx=random(-0.35,0.35);
+   vy=random(-2,-2.5);
   }
 
   void update()
