@@ -5,7 +5,7 @@ class Globo
   {
    x=_x;
    y=_y; 
-   vx=random(-0.25,0.25);
+   vx=random(-0.35,0.35);
    vy=random(-2,-0.5);
   }
 
