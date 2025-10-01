@@ -5,8 +5,8 @@ class Globo
   {
    x=_x;
    y=_y; 
-   vx=random(-0.35,0.35);
-   vy=random(-2,-2.5);
+   vx=random(-2,2);
+   vy=random(-2,-2);
   }
 
   void update()
@@ -18,8 +18,8 @@ class Globo
   void dibujate()
   {
     fill(0);
-      ellipse(x,y,100,150);
-      image(cara,x-25,y-25,50,50);
+      ellipse(x,y,4,4);
+      image(cara,x-2,y-2,4,4);
   }
   
 }
@@ -48,5 +48,6 @@ void draw()
 
 void mousePressed()
 {
-  globos.add(new Globo(mouseX,mouseY));
+  for(int i = 0; i< 1000; i++){
+  globos.add(new Globo(mouseX,mouseY));}
 }
