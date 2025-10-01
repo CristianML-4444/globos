@@ -30,6 +30,7 @@ PImage cara;
 
 void setup()
 {
+  background(640, 480);
   size(640,480);
   globos = new ArrayList<Globo>();  
   cara = loadImage("5D9.jpg");
@@ -38,7 +39,7 @@ void setup()
 
 void draw()
 {
-  //background(640, 480);
+
   for(int i=0;i<globos.size();i++)
   {
     globos.get(i).update();
